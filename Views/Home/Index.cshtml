@@ -1,0 +1,27 @@
+﻿
+<div class="text-left">
+    <h1 class="display-8">Painel rápido</h1>
+</div>
+
+<header>
+    <h1>@ViewData["Title"]</h1>
+    @{
+        if (User.Identity?.IsAuthenticated ?? false)
+        {
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                <button type="submit" class="nav-link btn btn-link text-dark">Deslogar</button>
+            </form>
+        }
+        else
+        {
+            <p></p>
+        }
+    }
+</header>
+@* <li class="nav-item">
+    <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Entrar</a>
+</li> *@
+<style>
+
+    
+        </style>

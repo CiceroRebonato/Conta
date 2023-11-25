@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ContaCerta</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffc6e3, #ffeabf);
+        }
+
+        .form-outline{
+        }
+
+        .vh-99 {
+            padding-top: 5cm;
+        }
+    
+
+        .p-5{
+            background-color:white;
+            color: blue;
+            border-radius: 5%;
+        }
+
+        .fundo{
+            width: 600px;
+            height: 460px;
+        }
+
+        .btn{
+            background-color: #d8def8;
+            color: #291e9a;
+            width: 160px;
+            height: 60px;
+            font-size:23px;
+            font-weight: bold;
+        }
+
+        .esqueceusenha{
+            margin-left: 71px;
+            margin-top: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 17px;
+        }
+
+    </style>
+    <header>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
